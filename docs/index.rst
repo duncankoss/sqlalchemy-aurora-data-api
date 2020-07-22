@@ -3,7 +3,7 @@
 API documentation
 =================
 
-.. automodule:: sqlalchemy-aurora-data-api
+.. automodule:: sqlalchemy-serverless-aurora-plugin
    :members:
    :special-members:
    :exclude-members: __weakref__

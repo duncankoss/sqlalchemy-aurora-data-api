@@ -1,6 +1,6 @@
 import guzzle_sphinx_theme
 
-project = "sqlalchemy-aurora-data-api"
+project = "sqlalchemy-serverless-aurora-plugin"
 copyright = "CZI"
 author = "Andrey Kislyuk"
 version = ""
@@ -15,7 +15,7 @@ html_theme_path = guzzle_sphinx_theme.html_theme_path()
 html_theme = "guzzle_sphinx_theme"
 html_theme_options = {
     "project_nav_name": project,
-    "projectlink": "https://github.com/chanzuckerberg/" + project,
+    "projectlink": "https://github.com/duncankoss/" + project,
 }
 html_sidebars = {
     "**": [

@@ -20,8 +20,8 @@ setup(
     packages=find_packages(exclude=['test']),
     entry_points={
         'sqlalchemy.dialects': [
-            'mysql.auroradataapi = sqlalchemy_aurora_data_api:AuroraMySQLDataAPIDialect',
-            'postgresql.auroradataapi = sqlalchemy_aurora_data_api:AuroraPostgresDataAPIDialect'
+            'mysql.auroradataapi = sqlalchemy_serverless_aurora_plugin:AuroraMySQLDataAPIDialect',
+            'postgresql.auroradataapi = sqlalchemy_serverless_aurora_plugin:AuroraPostgresDataAPIDialect'
         ]
     },
     platforms=['MacOS X', 'Posix'],
