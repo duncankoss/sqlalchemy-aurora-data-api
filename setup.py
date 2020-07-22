@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="sqlalchemy-serverless-aurora-plugin",
-    version="0.2.0",
+    version="0.2.1",
     url='https://github.com/duncankoss/sqlalchemy-serverless-aurora-plugin',
     license='Apache Software License',
     author='dkoss',

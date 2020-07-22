@@ -10,17 +10,17 @@ from sqlalchemy.dialects.postgresql.base import PGDialect
 from sqlalchemy.dialects.postgresql import JSON, JSONB, UUID, DATE, TIME, TIMESTAMP, ARRAY, ENUM
 from sqlalchemy.dialects.mysql.base import MySQLDialect
 
-import aurora_data_api
+import serverless_aurora
 
 
 class AuroraMySQLDataAPIDialect(MySQLDialect):
     # See https://docs.sqlalchemy.org/en/13/core/internals.html#sqlalchemy.engine.interfaces.Dialect
-    driver = "aurora_data_api"
+    driver = "serverless_aurora"
     default_schema_name = None
 
     @classmethod
     def dbapi(cls):
-        return aurora_data_api
+        return serverless_aurora
 
     def _detect_charset(self, connection):
         return connection.execute("SHOW VARIABLES LIKE 'character_set_client'").fetchone()[1]
@@ -104,7 +104,7 @@ class _ADA_ARRAY(ARRAY):
 
 class AuroraPostgresDataAPIDialect(PGDialect):
     # See https://docs.sqlalchemy.org/en/13/core/internals.html#sqlalchemy.engine.interfaces.Dialect
-    driver = "aurora_data_api"
+    driver = "serverless_aurora"
     default_schema_name = None
     colspecs = util.update_copy(PGDialect.colspecs, {
         sqltypes.JSON: _ADA_SA_JSON,
@@ -119,7 +119,7 @@ class AuroraPostgresDataAPIDialect(PGDialect):
     })
     @classmethod
     def dbapi(cls):
-        return aurora_data_api
+        return serverless_aurora
 
 
 def register_dialects():
