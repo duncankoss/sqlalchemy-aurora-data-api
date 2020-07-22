@@ -1,6 +1,9 @@
 sqlalchemy-aurora-data-api - An AWS Aurora Serverless Data API dialect for SQLAlchemy
 =====================================================================================
 
+This is a fork of sqlalchemy-aurora-data-api:
+https://github.com/chanzuckerberg/sqlalchemy-aurora-data-api
+
 This package provides a `SQLAlchemy <https://www.sqlalchemy.org>`_
 `dialect <https://docs.sqlalchemy.org/en/13/dialects/>`_ for accessing PostgreSQL and MySQL databases via the
 `AWS Aurora Data API <https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html>`_.
