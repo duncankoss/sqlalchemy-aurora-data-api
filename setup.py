@@ -3,17 +3,17 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="sqlalchemy-aurora-data-api",
-    version="0.2.0",
-    url='https://github.com/chanzuckerberg/sqlalchemy-aurora-data-api',
+    name="sqlalchemy-serverless-aurora-plugin",
+    version="0.1.1",
+    url='https://github.com/duncankoss/sqlalchemy-serverless-aurora-plugin',
     license='Apache Software License',
-    author='Andrey Kislyuk',
-    author_email='akislyuk@chanzuckerberg.com',
-    description='An AWS Aurora Serverless Data API dialect for SQLAlchemy',
+    author='dkoss',
+    author_email='',
+    description='A fork of sqlalchemy-aurora-data-api',
     long_description=open('README.rst').read(),
     install_requires=[
         'sqlalchemy',
-        'aurora-data-api >= 0.2.0'
+        'serverless-aurora >= 0.1.0'
     ],
     extras_require={
     },
